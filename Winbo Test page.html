@@ -34,6 +34,9 @@ function httpGet(theUrl)
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, true ); 
     xmlHttp.send( null );
+request.onload = function() {
+  document.imputform.firestText.value = request.response;
+}
    return xmlHttp.responseText;
 }
 </script>
