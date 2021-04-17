@@ -36,8 +36,13 @@ function httpGet(theUrl)
    return xmlHttp.responseText;
 }
 </script>
-<iframe src="https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p=[REFERRER]&a=[USER_AGENT]&cmp=[YOURNAME]&fmt=banner&rt=display&sl=1&fq=1" width="300" height="250">  
- <script src="https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p=[REFERRER]&a=[USER_AGENT]&cmp=[YOURNAME]&fmt=banner&rt=display&sl=1&fq=1" type="text/javascript"> </script>
+<iframe id="ifr" width="300" height="250">  
+ <script type="text/javascript"
+   window.onload=function(){
+   var obj=document.getElementById("ifr")
+   obj.contentWindow.location.href="https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p=[REFERRER]&a=[USER_AGENT]&cmp=[YOURNAME]&fmt=banner&rt=display&sl=1&fq=1";
+}                               
+  > </script>
 </iframe>
 </body>                             
 </html>
